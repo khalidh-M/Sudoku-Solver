@@ -2,19 +2,19 @@
 
 A Python application that solves Sudoku puzzles using the **Backtracking Algorithm**.
 
-This project was built to strengthen my understanding of Python programming, recursion, and algorithmic problem-solving. The solver automatically fills empty cells while following all Sudoku rules.
+This project was built to strengthen my understanding of **Python**, **recursion**, and **algorithmic problem-solving**. The solver automatically fills empty cells while following all Sudoku rules.
 
 ---
 
 ## 📌 Overview
 
-Sudoku is a logic-based puzzle played on a **9 × 9 grid** divided into **3 × 3 subgrids**.
+Sudoku is a logic-based puzzle played on a **9×9 grid**, divided into **nine 3×3 subgrids**.
 
 The objective is to fill every empty cell so that:
 
-- Every row contains the numbers **1–9**
-- Every column contains the numbers **1–9**
-- Every 3 × 3 box contains the numbers **1–9**
+- Each row contains the numbers **1–9**
+- Each column contains the numbers **1–9**
+- Each 3×3 box contains the numbers **1–9**
 
 This solver uses a **recursive backtracking algorithm** to find a valid solution.
 
@@ -22,12 +22,12 @@ This solver uses a **recursive backtracking algorithm** to find a valid solution
 
 ## 🚀 Features
 
-- Reads a Sudoku puzzle from a Python list
-- Displays the original puzzle
-- Finds empty cells automatically
-- Validates moves according to Sudoku rules
-- Solves the puzzle using recursion and backtracking
-- Prints the solved board in a readable format
+- ✅ Solves any valid 9×9 Sudoku puzzle
+- ✅ Uses the Backtracking Algorithm
+- ✅ Finds empty cells automatically
+- ✅ Validates every move according to Sudoku rules
+- ✅ Displays the original and solved board
+- ✅ Beginner-friendly Python code with comments
 
 ---
 
@@ -37,7 +37,9 @@ This solver uses a **recursive backtracking algorithm** to find a valid solution
 - Recursion
 - Backtracking Algorithm
 - Functions
-- Lists (2D Arrays)
+- 2D Lists (Arrays)
+- Git
+- GitHub
 
 ---
 
@@ -45,6 +47,10 @@ This solver uses a **recursive backtracking algorithm** to find a valid solution
 
 ```
 Sudoku-Solver/
+│
+├── images/
+│   ├── unsolved-board.jpg
+│   └── solved-board.jpg
 │
 ├── solver.py
 ├── README.md
@@ -55,17 +61,39 @@ Sudoku-Solver/
 
 ## 🧠 Algorithm
 
-The solver follows these steps:
+The solver works using the **Backtracking Algorithm**.
+
+### Steps
 
 1. Find the next empty cell.
-2. Try placing numbers **1 to 9**.
-3. Check whether the number is valid.
+2. Try numbers **1–9**.
+3. Check if the number is valid.
 4. If valid, place the number.
 5. Recursively solve the remaining puzzle.
-6. If no valid number exists, backtrack and try another number.
-7. Continue until the puzzle is solved.
+6. If no number works, undo the move (Backtrack).
+7. Repeat until the puzzle is solved.
 
-This approach is known as the **Backtracking Algorithm**.
+---
+
+## ⏱️ Time Complexity
+
+Worst Case:
+
+```
+O(9^(n²))
+```
+
+Since every empty cell may require trying numbers 1 through 9.
+
+---
+
+## 💾 Space Complexity
+
+```
+O(n²)
+```
+
+For storing the Sudoku board and recursive function calls.
 
 ---
 
@@ -74,13 +102,13 @@ This approach is known as the **Backtracking Algorithm**.
 Clone the repository:
 
 ```bash
-git clone https://github.com/khalidh-M/sudoku-solver.git
+git clone https://github.com/khalidh-M/Sudoku-Solver.git
 ```
 
 Move into the project directory:
 
 ```bash
-cd sudoku-solver
+cd Sudoku-Solver
 ```
 
 Run the program:
@@ -91,52 +119,59 @@ python solver.py
 
 ---
 
-## ▶️ Example Output
-Example Output
-![alt text](<Unsolved Board-1.jpg>)
-```
-🧩 ORIGINAL BOARD
+## 📸 Example Output
 
-0 0 0 | 0 6 7 | 0 8 0
-1 0 9 | 0 0 0 | 0 0 0
-...
+### 🧩 Original Sudoku Board
 
-=========================
+![Original Sudoku Board](images/unsolved-board.jpg)
 
-✅ SOLVED BOARD
-Example Output
-Images/Solved Board.jpg
+---
 
-2 5 3 | 1 6 7 | 4 8 9
-1 7 9 | ...
-```
+### ✅ Solved Sudoku Board
+
+![Solved Sudoku Board](images/solved-board.jpg)
 
 ---
 
 ## 📚 What I Learned
 
-Through this project, I improved my understanding of:
+Through this project, I learned:
 
-- Python functions
-- Nested loops
-- Lists and 2D arrays
+- Python programming fundamentals
+- Working with 2D lists
+- Writing reusable functions
 - Recursion
 - Backtracking algorithms
-- Problem-solving techniques
-- Code organization
+- Debugging techniques
+- Git and GitHub workflow
+- Writing professional project documentation
+
+---
+
+## 💡 Skills Demonstrated
+
+- Python
+- Problem Solving
+- Algorithms
+- Recursion
+- Backtracking
+- Data Structures
+- Git
+- GitHub
 
 ---
 
 ## 🔮 Future Improvements
 
-Planned enhancements include:
+Some planned enhancements include:
 
-- Graphical User Interface (Tkinter)
-- Random Sudoku puzzle generator
-- Difficulty levels
-- Input validation
-- Performance optimization
-- Web version using Streamlit or Flask
+- 🎨 Graphical User Interface (Tkinter)
+- 🌐 Web application using Streamlit
+- 📂 Read Sudoku puzzles from text files
+- 🎲 Random Sudoku Generator
+- 📊 Difficulty levels (Easy, Medium, Hard)
+- ⚡ Performance optimization
+- ✅ Unit testing with pytest
 
 ---
 
@@ -144,9 +179,14 @@ Planned enhancements include:
 
 **Khalidh Murghay**
 
-GitHub:
-https://github.com/khalidh-M
+GitHub Profile:
+
+**https://github.com/khalidh-M**
 
 ---
 
-⭐ If you found this project interesting, consider giving it a star!
+## ⭐ Support
+
+If you found this project helpful or interesting, consider giving it a ⭐ on GitHub.
+
+Feedback and suggestions are always welcome!
