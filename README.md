@@ -93,7 +93,7 @@ python solver.py
 
 ## ▶️ Example Output
 Example Output
-![alt text](<Sudoku-Solver Unsolved Board-1.jpg>)
+![alt text](<Unsolved Board-1.jpg>)
 ```
 🧩 ORIGINAL BOARD
 
@@ -105,7 +105,7 @@ Example Output
 
 ✅ SOLVED BOARD
 Example Output
-Images/Sudoku-Solver Solved Board.jpg
+Images/Solved Board.jpg
 
 2 5 3 | 1 6 7 | 4 8 9
 1 7 9 | ...
